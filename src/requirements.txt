@@ -1,0 +1,12 @@
+numpy~=2.2.4
+pip~=23.2.1
+torch>2
+matplotlib~=3.10.1
+jax~=0.5.3
+tqdm~=4.67.1
+
+clarabel~=0.10.0
+pillow~=11.1.0
+filelock~=3.18.0
+cvxpy~=1.6.5
+scipy~=1.15.2

@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+__pycache__*
+*.eps
+*.pdf
+*.png
+log/*
+*.pt
+figures/*.pdf
+*/saved_results/*.pkl
+experiments/*/saved_results/*.pkl
+.venv/*
