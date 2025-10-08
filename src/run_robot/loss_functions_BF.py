@@ -80,7 +80,7 @@ class RobotsLoss():
 
     def loss_quadratic(self, x_batch, u_batch):
         # loss states = sum_{t=1}^T (x_t-xbar)^T Q (x_t-xbar)
-        x_batch_centered = x_batch  # - self.xbar TODO see how to menage
+        x_batch_centered = x_batch  # - self.xbar
         xTQx = torch.matmul(
             torch.matmul(x_batch_centered.transpose(-1, -2), self.Q),
             x_batch_centered

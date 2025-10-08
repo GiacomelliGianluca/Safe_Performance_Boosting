@@ -19,7 +19,7 @@ def plt_parser():
 
     args = parser.parse_args()
 
-    if args.document == "paper": # TODO: Chiedere a Luca/Danilo la dimensione delle figure e il font che usano
+    if args.document == "paper":
         args.plot_dim_x = 3.15 # (inch). Dimension of the x-axis
         args.plot_dim_y = 2.36 # (inch). Dimension of the y-axis
 

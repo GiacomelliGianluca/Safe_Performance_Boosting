@@ -46,7 +46,7 @@ def argument_parser():
     parser.add_argument('--alpha-obst', type=float, default=5e3,
                         help='Weight of the obstacle avoidance loss. Default is 5e3 if "obst-av" is True, else None.')
     parser.add_argument('--min-dist', type=float, default=1.0,
-                        help='TODO. Default is 1.0 if "col-av" is True, else None.')  # TODO: add help
+                        help='TODO. Default is 1.0 if "col-av" is True, else None.')
 
     # optimizer
     parser.add_argument('--batch-size', type=int, default=5,
