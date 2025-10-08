@@ -4,7 +4,7 @@
 
 Python implementation of ADMM for Performance Boosting
 with Constraint Satisfaction as described in the article
-"Learning to Satisfy Constraints while Boosting the Performance with ADMM" and [2] with Control Barrier Functions (CBFs).
+"Learning to Satisfy Constraints while Boosting the Performance with ADMM."
 
 ## Project Setup
 
@@ -65,7 +65,7 @@ This pre-stabilized system with a P-controller is described by the following dif
     F_t\!&=P(\bar{a}-a_t)+u_t,
 \end{align}
 ```
-with $x_t=\begin{bmatrix}a_t^\top & q_t^\top\end{bmatrix}^\top$ its state composed by the Euclidian positions $a_t$ and velocities $q_t$ , respectively, $u_t$ the performance boosting input, and $w_t$ an exogenous disturbance. 
+with $x_t=[\begin{bmatrix}]a_t^\top & q_t^\top\end{bmatrix}^\top$ its state composed by the Euclidian positions $a_t$ and velocities $q_t$ , respectively, $u_t$ the performance boosting input, and $w_t$ an exogenous disturbance. 
 
 The following gif showcases the performance boosting with the safe performance boosting algorithm for velocity constraints, speeding up the convergence to $(\bar{x},\bar{u})$, and collision avoidance of an obstacle.
 
@@ -86,6 +86,5 @@ See [LICENSE](LICENSE) for more details.
 
 ## References
 - 
-[[2]](https://arxiv.org/pdf/2405.00871) Luca Furieri, Clara Galimberti, Giancarlo Ferrari Trecate.
-"Learning to boost the performance of stable nonlinear closed-loop systems," 2024.
+
 
