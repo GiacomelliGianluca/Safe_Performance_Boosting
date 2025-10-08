@@ -8,8 +8,8 @@ with Constraint Satisfaction as described in the article
 
 ## Project Setup
 
-In order to run this project it is recommended to use a virtual environment
-and required to install some dependencies. 
+In order to run this project, it is recommended to use a virtual environment,
+and it is required to install some dependencies. 
 The setup process for both actions is automated using `setup.py`.
 
 ### Installation
@@ -54,7 +54,7 @@ The project requires the following dependencies, which are automatically install
 
 ## Benchmark case study: a point-mass robot
 
-This system is described by the following difference equation
+This pre-stabilized system with a P-controller is described by the following difference equation
 
 ```math
 \begin{align}
@@ -62,21 +62,27 @@ This system is described by the following difference equation
         q_{t-1}\\
         \!M^{-1}(\beta_1q_{t-1}\!\!+\!\beta_2 \mathrm{tanh}(\!q_{t-1}\!)\!+\!F_{t-1}\!)\!
     \end{bmatrix}\! +w_t,\!\!\\
-    F_t\!&=F'_t(a_t)+u_t,
+    F_t\!&=P(\bar{a}-a_t)+u_t,
 \end{align}
 ```
-with $x_t=\begin{bmatrix}a_t^\top & q_t^\top\end{bmatrix}^\top$ its state composed by the Euclidian positions $a_t$ and velocities $q_t$ , respectively, and the input voltage and $u_t$ the performance boosting input. 
+with $x_t=\begin{bmatrix}a_t^\top & q_t^\top\end{bmatrix}^\top$ its state composed by the Euclidian positions $a_t$ and velocities $q_t$ , respectively, $u_t$ the performance boosting input, and $w_t$ an exogenous disturbance. 
 
-The following gif showcases the performance boosting with velocity constraints achieved with the safe performance boosting algorithm.
+The following gif showcases the performance boosting with the safe performance boosting algorithm for velocity constraints, speeding up the convergence to $(\bar{x},\bar{u})$, and collision avoidance of an obstacle.
 
 <p align="center">
-     <img src="gifs/IO_tr_C12.gif" alt="iLasso-DeePC trajectory tracking, data selection, and BPIs">
+     <img src="gifs/safe_PB.gif" alt="Safe Performance Boosting Speed and Trajectory Evolutions">
 </p> 
 
 ## License
 This project is licensed under the terms of the `CC-BY-4.0` license.
 See [LICENSE](LICENSE) for more details.
 
+
+[![CC BY 4.0][cc-by-image]][cc-by] 
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 ## References
 - 
