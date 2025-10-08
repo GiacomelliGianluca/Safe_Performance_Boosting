@@ -67,7 +67,7 @@ This pre-stabilized system with a P-controller is described by the following dif
 ```
 with $x_t=[a_t^\top ~ q_t^\top]^\top$ its state composed by the Euclidian positions $a_t$ and velocities $q_t$ , respectively, $u_t$ the performance boosting input, and $w_t$ an exogenous disturbance. 
 
-The following gif showcases the performance boosting with the safe performance boosting algorithm for velocity constraints, speeding up the convergence to $(\bar{x},\bar{u})$, and collision avoidance of an obstacle.
+The following gif showcases the performance boosting with the safe performance boosting algorithm for velocity constraints, speeding up the convergence to $(\bar{x},\bar{u})=(0,0)$, and collision avoidance of an obstacle.
 
 <p align="center">
      <img src="gifs/safe_PB.gif" alt="Safe Performance Boosting Speed and Trajectory Evolutions">
