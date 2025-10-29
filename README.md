@@ -62,7 +62,7 @@ This pre-stabilized system with a P-controller is described by the following dif
         q_{t-1}\\
         \!M^{-1}(\beta_1q_{t-1}\!\!+\!\beta_2 \mathrm{tanh}(\!q_{t-1}\!)\!+\!F_{t-1}\!)\!
     \end{bmatrix}\! +w_t,\!\!\\
-    F_t\!&=P(\bar{a}-a_t)+u_t,
+    F_t\!&=\bar{a}-a_t + u_t,
 \end{align}
 ```
 with $x_t=[a_t^\top ~ q_t^\top]^\top$ its state composed by the Euclidian positions $a_t$ and velocities $q_t$ , respectively, $u_t$ the performance boosting input, and $w_t$ an exogenous disturbance. 
