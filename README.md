@@ -1,10 +1,10 @@
 [![python](https://img.shields.io/badge/python-3.12+-informational.svg)](https://www.python.org/downloads/)
 
-# Learning to Satisfy Constraints while Boosting the Performance with ADMM
+# Constrained Performance Boosting Control for Nonlinear Systems via ADMM
 
 Python implementation of ADMM for Performance Boosting
 with Constraint Satisfaction as described in the article
-"Learning to Satisfy Constraints while Boosting the Performance with ADMM."
+"Constrained Performance Boosting Control for Nonlinear Systems via ADMM."
 
 ## Project Setup
 
