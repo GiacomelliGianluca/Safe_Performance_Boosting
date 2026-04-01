@@ -85,6 +85,11 @@ See [LICENSE](LICENSE) for more details.
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 ## References
-- 
+@article{giacomelli2025constrained,
+  title={Constrained Performance Boosting Control for Nonlinear Systems via ADMM},
+  author={Giacomelli, Gianluca and Saccani, Danilo and Weiland, Siep and Ferrari-Trecate, Giancarlo and Breschi, Valentina},
+  journal={arXiv preprint arXiv:2511.02389},
+  year={2025}
+}
 
 
